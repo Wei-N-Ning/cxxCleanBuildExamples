@@ -14,6 +14,9 @@ target_include_directories(treasureV2_static
 set_property(TARGET treasureV2_static
     PROPERTY CXX_STANDARD 11)
 
+set_property(TARGET treasureV2_static
+    PROPERTY POSITION_INDEPENDENT_CODE ON)
+
 add_library(treasureV2_shared SHARED
     source/goldEgg.cpp
     source/holyGrail.cpp)
