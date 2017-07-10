@@ -1,0 +1,2 @@
+project(cxxCleanBuildExamples CXX)
+
