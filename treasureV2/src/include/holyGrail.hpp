@@ -11,15 +11,20 @@ namespace treasure {
 class HolyGrail {
 public:
     HolyGrail(bool toFill=true);
+    HolyGrail(bool toFill, double price);
+    double price();
     void fillWater();
     void dumpWater();
     bool isEmpty();
 private:
+    double m_price;
     bool m_filled;
 };
 
 
 void drink(HolyGrail *pHolyGrail);
+
+void payToDrink(HolyGrail *pHolyGrail, double pricePaid);
 
 }
 

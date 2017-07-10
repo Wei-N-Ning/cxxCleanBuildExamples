@@ -12,4 +12,4 @@ target_include_directories(middleManA_static
     PRIVATE
     source)
 
-target_link_libraries(middleManA_static treasure_static)
+target_link_libraries(middleManA_static treasureV1_static)

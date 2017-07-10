@@ -12,4 +12,4 @@ target_include_directories(middleManB_static
     PRIVATE
     source)
 
-target_link_libraries(middleManB_static treasure_static)
+target_link_libraries(middleManB_static treasureV2_static)
