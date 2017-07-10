@@ -16,7 +16,7 @@ private:
 };
 
 
-GoldEgg makeEgg(double weight=1.0);
+GoldEgg makeEgg(double weight);
 
 }
 

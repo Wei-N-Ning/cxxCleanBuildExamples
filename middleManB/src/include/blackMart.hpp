@@ -9,7 +9,7 @@
 
 namespace middleManB {
 
-treasure::HolyGrail makeHolyGrail(bool toFill=false);
+treasure::HolyGrail makeHolyGrail(bool toFill);
 
 }
 

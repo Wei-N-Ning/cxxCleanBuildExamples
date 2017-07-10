@@ -10,7 +10,7 @@ namespace treasure {
 
 class HolyGrail {
 public:
-    HolyGrail(bool toFill=true);
+    HolyGrail(bool toFill);
     HolyGrail(bool toFill, double price);
     double price();
     void fillWater();

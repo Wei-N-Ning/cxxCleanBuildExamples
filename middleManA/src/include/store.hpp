@@ -14,7 +14,7 @@ namespace middleManA {
 
 using VecGoldEggs = std::vector<treasure::GoldEgg>;
 
-VecGoldEggs getGoldEggs(int num=1, double weight=1.0);
+VecGoldEggs getGoldEggs(int num, double weight);
 
 }
 
