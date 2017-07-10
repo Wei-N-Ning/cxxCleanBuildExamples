@@ -5,16 +5,21 @@
 #ifndef CXXCLEANBUILDEXAMPLES_STORE_HPP
 #define CXXCLEANBUILDEXAMPLES_STORE_HPP
 
-#include <vector>
-
-#include <goldEgg.hpp>
+#include <memory>
 
 
 namespace middleManA {
 
-using VecGoldEggs = std::vector<treasure::GoldEgg>;
+class EggBasketImpl;
 
-VecGoldEggs getGoldEggs(int num, double weight);
+class EggBasket {
+public:
+    EggBasket(int num, double weight);
+    double weight(int idx);
+    int num();
+private:
+    std::shared_ptr<EggBasketImpl> pImpl;
+};
 
 }
 
