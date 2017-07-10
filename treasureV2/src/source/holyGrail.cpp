@@ -8,7 +8,7 @@ treasure::HolyGrail::HolyGrail(bool toFill, double price)
 
 
 treasure::HolyGrail::HolyGrail(bool toFill)
-    : treasure::HolyGrail::HolyGrail(toFill, 10000.0) {
+    : m_filled(toFill), m_price(10000.0) {
 }
 
 

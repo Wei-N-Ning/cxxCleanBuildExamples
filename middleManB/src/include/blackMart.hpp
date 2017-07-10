@@ -5,11 +5,21 @@
 #ifndef CXXCLEANBUILDEXAMPLES_BLACKMART_HPP
 #define CXXCLEANBUILDEXAMPLES_BLACKMART_HPP
 
-#include <holyGrail.hpp>
+#include <memory>
+
 
 namespace middleManB {
 
-treasure::HolyGrail makeHolyGrail(bool toFill=false);
+class GrailImpl;
+
+class Grail {
+public:
+    Grail(bool toFill);
+    bool isEmpty();
+    void dumpWater();
+private:
+    std::shared_ptr<GrailImpl> pGrailImpl;
+};
 
 }
 
