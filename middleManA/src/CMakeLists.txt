@@ -5,6 +5,10 @@ add_library(middleManA_static STATIC
 set_property(TARGET middleManA_static
     PROPERTY CXX_STANDARD 11)
 
+set_property(TARGET middleManA_static
+    PROPERTY CMAKE_SHARED_LINKER_FLAGS "${CMAKE_SHARED_LINKER_FLAGS} -Wl,--version-script,
+    ${CMAKE_CURRENT_SOURCE_DIR}/config/symbols.map")
+
 target_include_directories(middleManA_static
     PUBLIC
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
