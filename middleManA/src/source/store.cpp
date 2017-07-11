@@ -14,7 +14,7 @@ namespace middleManA {
 class EggBasketImpl {
 public:
     EggBasketImpl(int num, double weight);
-    using EggVec = std::vector<treasure::GoldEgg>;
+    typedef std::vector<treasure::GoldEgg> EggVec;
     EggVec m_vec;
 };
 
