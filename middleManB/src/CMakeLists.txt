@@ -20,6 +20,9 @@ add_library(middleManB_shared SHARED
 set_property(TARGET middleManB_shared
     PROPERTY CXX_STANDARD 11)
 
+set_property(TARGET middleManB_shared
+    PROPERTY CMAKE_CXX_VISBILITY_PRESET hidden)
+
 target_include_directories(middleManB_shared
     PUBLIC
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
