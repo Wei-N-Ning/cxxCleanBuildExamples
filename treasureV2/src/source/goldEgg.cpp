@@ -6,7 +6,12 @@
 
 
 treasure::GoldEgg::GoldEgg(double weight)
-    : m_weight(weight) {
+    : m_weight(weight), pBasket(nullptr) {
+}
+
+
+treasure::GoldEgg::GoldEgg(double weight, Basket *pBasket)
+    : m_weight(weight), pBasket(pBasket) {
 }
 
 
@@ -15,6 +20,11 @@ double treasure::GoldEgg::weight() {
 }
 
 
+treasure::Basket *treasure::GoldEgg::basket() {
+    return pBasket;
+}
+
+
 treasure::GoldEgg treasure::makeEgg(double weight) {
-    return treasure::GoldEgg(weight);
+    return {weight};
 }

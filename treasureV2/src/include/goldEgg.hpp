@@ -7,12 +7,18 @@
 
 namespace treasure {
 
+class Basket;
+
 class GoldEgg {
 public:
+    GoldEgg();
     GoldEgg(double weight);
+    GoldEgg(double weight, Basket *pBasket);
     double weight();
+    Basket *basket();
 private:
     double m_weight;
+    Basket *pBasket;
 };
 
 
